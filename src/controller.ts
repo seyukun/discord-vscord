@@ -21,7 +21,18 @@ export class RPCController {
     listeners: Disposable[] = [];
     enabled = true;
     canSendActivity = true;
-    state: SetActivity = {};
+    state: SetActivity = {
+        buttons: [
+            {
+                label: "GitHub",
+                url: "https://github.com/seyukun"
+            },
+            {
+                label: "Qiita",
+                url: "https://qiita.com/yush"
+            }
+        ]
+    };
     debug = false;
     client: Client;
 
