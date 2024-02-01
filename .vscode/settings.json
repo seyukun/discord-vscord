@@ -8,5 +8,8 @@
         "out": true,
         "dist": true,
         "pnpm-lock.yaml": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     }
 }

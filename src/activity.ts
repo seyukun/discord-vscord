@@ -263,8 +263,18 @@ export const activity = async (
             break;
         }
     }
-    let buttons = await getPresenceButtons(isIdling, isGitExcluded, status, replaceAllText);
-    //
+    // let buttons = await getPresenceButtons(isIdling, isGitExcluded, status, replaceAllText);
+    let buttons = [
+        {
+            label: "GitHub",
+            url: "https://github.com/seyukun"
+        },
+        {
+            label: "Qiita",
+            url: "https://qiita.com/yush"
+        }
+    ];
+
     presence.details = details;
     presence.state = state;
     presence.largeImageKey = largeImageKey;
